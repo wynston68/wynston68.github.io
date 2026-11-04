@@ -69,6 +69,24 @@
   .price small { font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--muted); }
 
   /* Examples */
+  .demo {
+    display: block; background: #fff; border-radius: 14px; overflow: hidden;
+    border: 1px solid #ece4d3; text-decoration: none; max-width: 460px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .demo:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+  .demo-top {
+    background: linear-gradient(160deg, #8a2b38, #6e1f2a 55%, #4a141c);
+    color: #fff; text-align: center; padding: 34px 20px;
+  }
+  .demo-top small { display: block; letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.7rem; color: #c9a36a; font-weight: 600; }
+  .demo-top b { display: block; font-family: 'Fraunces', serif; font-style: italic; font-size: 2rem; font-weight: 600; margin-top: 6px; }
+  .demo-body { padding: 22px 24px 24px; }
+  .demo-body h3 { color: var(--green); font-size: 1.2rem; margin-bottom: 6px; }
+  .demo-body p { color: var(--muted); font-size: 0.95rem; margin-bottom: 8px; }
+  .demo-body .fix b { color: var(--green); }
+  .demo-link { display: inline-block; margin-top: 6px; color: var(--green); font-weight: 600; }
+  .note { font-size: 0.85rem; color: var(--muted); margin-top: 18px; }
   .coming {
     background: #fff; border: 2px dashed var(--gold); border-radius: 14px;
     padding: 34px; text-align: center; color: var(--muted);
@@ -157,7 +175,16 @@
   <div class="wrap">
     <h2>Example designs</h2>
     <p class="lead">A look at what your website could be.</p>
-    <div class="coming">Concept designs for local businesses coming soon.</div>
+    <a class="demo" href="cariad-demo.html">
+      <div class="demo-top"><small>Cariad Café · Penclawdd</small><b>Bistro Evenings</b></div>
+      <div class="demo-body">
+        <h3>Online bookings &amp; pre-orders</h3>
+        <p class="fix"><b>The problem:</b> evening bookings and menu choices sorted through Facebook messages.</p>
+        <p class="fix"><b>The fix:</b> guests pick their sitting and each person's dishes in one form, with the total worked out automatically.</p>
+        <span class="demo-link">View the concept →</span>
+      </div>
+    </a>
+    <p class="note">Concept designs are examples of what's possible. They aren't the businesses' official websites.</p>
   </div>
 </section>
 

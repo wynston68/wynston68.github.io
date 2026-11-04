@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bistro Evenings at Cariad Café, Penclawdd (Concept)</title>
+<meta name="description" content="Concept page: evening fine dining at Cariad Café, Penclawdd. Seasonal local produce with Chef Chris. Book your sitting and pre-order online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cocoa:#5e3f2b; --cocoa-2:#4a3121; --wine:#6e1f2a; --wine-2:#8a2b38;
+  --cream:#f7f0e6; --cream-2:#ecdfcc; --gold:#c9a36a; --ink:#2b211b; --muted:#7a6a5e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Lato,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.15;font-weight:500}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+.concept{background:var(--gold);color:var(--cocoa-2);text-align:center;font-size:.8rem;padding:6px 16px;font-weight:700}
+.concept a{color:var(--cocoa-2)}
+
+header{background:var(--cocoa);color:var(--cream)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-family:"Playfair Display",serif;font-style:italic;font-size:1.6rem;text-decoration:none}
+.logo span{font-style:normal;font-family:Lato;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-2);margin-left:6px}
+.links{display:flex;gap:20px;list-style:none;font-size:.9rem}
+.links a{text-decoration:none;color:var(--cream-2)}
+.links a.on{color:#fff;border-bottom:2px solid var(--gold)}
+@media(max-width:700px){.links{display:none}}
+
+.hero{background:radial-gradient(ellipse at 70% 20%,rgba(201,163,106,.22),transparent 55%),linear-gradient(160deg,var(--wine-2),var(--wine) 55%,#4a141c);color:#fff;text-align:center}
+.hero .wrap{padding-top:70px;padding-bottom:70px}
+.eyebrow{text-transform:uppercase;letter-spacing:.26em;font-size:.72rem;color:var(--gold);font-weight:700}
+.hero h1{font-size:clamp(2.6rem,9vw,4.8rem);font-style:italic;margin:12px 0 10px}
+.hero .sub{font-size:1.08rem;color:#f1dfe1;max-width:44ch;margin:0 auto}
+.date{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:28px 0 30px}
+.pill{border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:9px 18px;font-size:.92rem}
+.pill b{color:var(--gold)}
+.btn{display:inline-block;padding:15px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.95rem}
+.btn-gold{background:var(--gold);color:var(--cocoa-2)}
+
+section{padding:64px 0}
+.center{text-align:center}
+.title{font-size:clamp(1.9rem,5vw,2.6rem);color:var(--cocoa);margin:8px 0 14px}
+.lead{max-width:60ch;margin:0 auto;color:var(--muted);font-size:1.03rem}
+
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+@media(max-width:720px){.feats{grid-template-columns:1fr}}
+.feat{background:#fff;border:1px solid var(--cream-2);border-radius:12px;padding:22px;text-align:left}
+.feat .ico{font-size:1.6rem}
+.feat h3{font-size:1.25rem;color:var(--wine);margin:6px 0 4px}
+.feat p{font-size:.92rem;color:var(--muted)}
+
+.menu{background:var(--cocoa);color:var(--cream)}
+.card{background:var(--cream);color:var(--ink);border-radius:14px;padding:38px 28px;max-width:640px;margin:30px auto 0;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.25);border:1px solid var(--gold)}
+.canapes{font-family:"Playfair Display",serif;font-style:italic;color:var(--wine);font-size:1.15rem;padding-bottom:18px;margin-bottom:4px;border-bottom:1px solid var(--gold)}
+.card h3{font-size:1.05rem;letter-spacing:.22em;text-transform:uppercase;color:var(--wine);font-family:Lato;font-weight:700;margin:24px 0 10px}
+.dish{padding:8px 0;border-bottom:1px dotted var(--cream-2)}
+.dish:last-of-type{border-bottom:0}
+.dish i{font-family:"Playfair Display",serif;font-size:1.12rem}
+.dish small{display:block;color:var(--muted);font-size:.85rem}
+.price{margin-top:26px;padding-top:18px;border-top:1px solid var(--gold);font-family:"Playfair Display",serif;font-size:1.6rem;color:var(--wine)}
+.price small{display:block;font-family:Lato;font-size:.8rem;color:var(--muted);letter-spacing:.08em}
+
+.sittings{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:560px;margin:30px auto 0}
+.sit{background:#fff;border:2px solid var(--wine);border-radius:14px;padding:24px;text-align:center}
+.sit b{display:block;font-family:"Playfair Display",serif;font-size:2.2rem;color:var(--wine)}
+.sit span{font-size:.85rem;color:var(--muted)}
+
+.book{background:var(--cream-2)}
+form{background:#fff;border-radius:14px;padding:26px;max-width:620px;margin:28px auto 0;display:grid;gap:12px;text-align:left}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+label{display:grid;gap:4px;font-size:.8rem;font-weight:700;color:var(--muted)}
+input,select,textarea{font:inherit;padding:12px 14px;border:1px solid var(--cream-2);border-radius:8px;background:#fdfaf6;color:var(--ink);width:100%}
+textarea{min-height:90px}
+fieldset{border:1px dashed var(--gold);border-radius:10px;padding:14px;display:grid;gap:10px}
+legend{font-size:.8rem;font-weight:700;color:var(--wine);padding:0 6px}
+.total{text-align:center;font-weight:700;color:var(--wine)}
+form button{background:var(--wine);color:#fff;border:0;border-radius:999px;padding:15px;font:inherit;font-weight:700;cursor:pointer}
+.alt{text-align:center;font-size:.9rem;color:var(--muted);margin-top:14px}
+
+.hosts .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:36px;align-items:center}
+@media(max-width:720px){.hosts .wrap{grid-template-columns:1fr}}
+.photo{aspect-ratio:1;border-radius:50%;background:linear-gradient(140deg,var(--cream-2),var(--gold));display:grid;place-items:center;max-width:260px;margin:0 auto;text-align:center;color:var(--cocoa);font-size:.85rem;padding:30px}
+.stars{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.stars b{font-family:"Playfair Display",serif;font-size:2rem;color:var(--wine)}
+
+footer{background:var(--cocoa-2);color:var(--cream-2);font-size:.9rem;text-align:center}
+footer .wrap{padding-top:40px;padding-bottom:26px;display:grid;gap:8px}
+footer h4{font-family:"Playfair Display",serif;font-style:italic;font-size:1.5rem;color:#fff}
+.credit{border-top:1px solid #5e3f2b;padding:14px;font-size:.76rem}
+.credit a{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<div class="concept">Concept design by <a href="/">Cynefin Digital</a> — not the live Cariad Café website</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">Cariad<span>caffi · café</span></a>
+    <ul class="links">
+      <li><a href="#">Café</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a class="on" href="#">Bistro Evenings</a></li>
+      <li><a href="#">Find us</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="eyebrow">New at Cariad Café, Penclawdd</div>
+    <h1>Bistro Evenings</h1>
+    <p class="sub">An evening of fine dining with Chef Chris: seasonal, local and beautifully made, in a relaxed bistro setting.</p>
+    <div class="date">
+      <span class="pill">🥂 <b>Friday 13th November</b></span>
+      <span class="pill">5:30pm &amp; 8pm sittings</span>
+      <span class="pill">Three courses · <b>£45</b> per person</span>
+    </div>
+    <div><a class="btn btn-gold" href="#book">Book your table</a></div>
+  </div>
+</section>
+
+<section class="center">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--wine)">The experience</div>
+    <h2 class="title">A celebration of the seasons</h2>
+    <p class="lead">Our menu showcases the finest local produce and thoughtfully sourced seasonal ingredients, inspired by the landscape around us.</p>
+    <div class="feats">
+      <div class="feat"><div class="ico">🌿</div><h3>Foraged &amp; local</h3><p>Ingredients from the Gower coast and countryside, chosen for the season.</p></div>
+      <div class="feat"><div class="ico">🫙</div><h3>Made in-house</h3><p>House-made pickles and accompaniments bring depth and balance to every dish.</p></div>
+      <div class="feat"><div class="ico">🕯️</div><h3>Relaxed bistro</h3><p>Your favourite daytime café, transformed for a special evening out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu center" id="menu">
+  <div class="wrap">
+    <div class="eyebrow">Tasting the season</div>
+    <h2 class="title" style="color:#fff">The Menu</h2>
+    <div class="card">
+      <div class="canapes">Canapés on arrival</div>
+
+      <h3>Appetisers</h3>
+      <div class="dish"><i>Wild Mushroom Cappelletti</i><small>Leek sauce</small></div>
+      <div class="dish"><i>Crab Tian</i><small>Salsa · Melba toast</small></div>
+      <div class="dish"><i>Fig &amp; Prosciutto</i><small>Gorgonzola</small></div>
+
+      <h3>Main Dish</h3>
+      <div class="dish"><i>Venison Stew</i><small>Parsnip purée</small></div>
+      <div class="dish"><i>Hake</i><small>Chorizo · Romesco</small></div>
+      <div class="dish"><i>Duck Breast</i><small>Rösti · Jus</small></div>
+      <div class="dish"><i>Lamb Rump</i><small>Skordalia · Port sauce</small></div>
+      <div class="dish"><i>Cauliflower Three Ways</i><small>Mediterranean cous cous</small></div>
+
+      <h3>Desserts</h3>
+      <div class="dish"><i>Chocolate Crémeux</i><small>Chocolate bark · Honeycomb</small></div>
+      <div class="dish"><i>Poached Pears</i><small>Spiced granola</small></div>
+      <div class="dish"><i>Chef's Tiramisu</i></div>
+
+      <div class="price">£45 <small>PER PERSON</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="center">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--wine)">Choose your time</div>
+    <h2 class="title">Two sittings</h2>
+    <div class="sittings">
+      <div class="sit"><b>5:30pm</b><span>Early sitting</span></div>
+      <div class="sit"><b>8:00pm</b><span>Late sitting</span></div>
+    </div>
+    <p class="lead" style="margin-top:20px">Spaces are limited, so early booking is recommended.</p>
+  </div>
+</section>
+
+<section class="book center" id="book">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--wine)">Reserve</div>
+    <h2 class="title">Book &amp; pre-order</h2>
+    <p class="lead">Pick your sitting and choose each guest's dishes in one go. No back-and-forth messages needed.</p>
+    <form id="bookingForm">
+      <div class="row">
+        <label>Name<input type="text" placeholder="Your name"></label>
+        <label>Mobile<input type="tel" placeholder="For your confirmation"></label>
+      </div>
+      <div class="row">
+        <label>Sitting<select><option>5:30pm</option><option>8:00pm</option></select></label>
+        <label>Guests<select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+      </div>
+      <div id="preorders" style="display:grid;gap:12px"></div>
+      <div class="total" id="total">Total: £90</div>
+      <label>Allergies or dietary needs<textarea placeholder="Let Chef Chris know"></textarea></label>
+      <button type="submit">Request my table</button>
+    </form>
+    <p class="alt">Prefer to chat? Call or message <b>07971 673223</b></p>
+  </div>
+</section>
+
+<section class="hosts">
+  <div class="wrap">
+    <div class="photo">📷 Photo slot: Katie, Thomas &amp; Chef Chris</div>
+    <div>
+      <div class="eyebrow" style="color:var(--wine)">From your hosts</div>
+      <h2 class="title">We can't wait to welcome you</h2>
+      <p class="lead" style="margin:0">Cariad has been Penclawdd's favourite spot for breakfast, lunch and homemade cakes. Now we're opening our doors in the evening too. Come and join us for something special.</p>
+      <p style="margin-top:14px;font-family:'Playfair Display',serif;font-style:italic;font-size:1.2rem;color:var(--cocoa)">Katie &amp; Thomas x</p>
+    </div>
+  </div>
+  <div class="wrap stars" style="display:flex">
+    <b>100%</b><span>recommend us on Facebook, from 310 reviews</span>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h4>Cariad Café</h4>
+    <p>1–2 Bellevue, Penclawdd, Swansea SA4 3YE</p>
+    <p>Café 01792 851185 · Bistro bookings 07971 673223</p>
+    <p>info@cariadcafe.com</p>
+  </div>
+  <div class="credit">Concept page designed by <a href="/">Cynefin Digital</a> · Not affiliated with or approved by Cariad Café</div>
+</footer>
+
+<script>
+const menu = {
+  "Appetiser": ["Wild Mushroom Cappelletti, leek sauce","Crab Tian, salsa, Melba toast","Fig, prosciutto, Gorgonzola"],
+  "Main": ["Venison Stew, parsnip purée","Hake, chorizo, romesco","Duck Breast, rösti, jus","Lamb Rump, skordalia, port sauce","Cauliflower Three Ways, Mediterranean cous cous"],
+  "Dessert": ["Chocolate Crémeux, chocolate bark, honeycomb","Poached Pears, spiced granola","Chef's Tiramisu"]
+};
+const guests = document.getElementById('guests');
+const box = document.getElementById('preorders');
+const total = document.getElementById('total');
+function build(){
+  const n = parseInt(guests.value,10);
+  let html = '';
+  for(let g=1; g<=n; g++){
+    html += '<fieldset><legend>Guest ' + g + '</legend>';
+    for(const course in menu){
+      html += '<label>' + course + '<select><option>Choose…</option>' +
+        menu[course].map(d => '<option>' + d + '</option>').join('') + '</select></label>';
+    }
+    html += '</fieldset>';
+  }
+  box.innerHTML = html;
+  total.textContent = 'Total: £' + (n*45);
+}
+guests.addEventListener('change', build);
+build();
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  this.querySelector('button').textContent = 'Booking received! (demo) 🥂';
+});
+</script>
+
+</body>
+</html>
