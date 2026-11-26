@@ -100,6 +100,9 @@
   .contact { background: var(--green); color: var(--cream); text-align: center; }
   .contact h2 { color: var(--cream); }
   .contact .lead { color: var(--cream); opacity: 0.85; margin: 0 auto 28px; }
+  .contact-btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn-outline { background: transparent; color: var(--gold-light); border: 2px solid var(--gold); padding: 12px 26px; }
+  .btn-outline:hover { background: var(--gold); color: var(--green); }
   .phone { display: block; font-family: 'Fraunces', serif; font-size: clamp(1.8rem, 6vw, 2.6rem); color: var(--gold); text-decoration: none; margin-bottom: 24px; }
 
   footer { background: #16291f; color: #b9c2bc; text-align: center; padding: 22px 0; font-size: 0.85rem; }
@@ -199,9 +202,13 @@
 <section class="contact" id="contact">
   <div class="wrap">
     <h2>Let's have a chat</h2>
-    <p class="lead">No pressure, no hard sell. Give me a ring and tell me about your business.</p>
+    <p class="lead">No pressure, no hard sell. Give me a ring, or if you're busy, send a quick message and I'll get back to you.</p>
     <a href="tel:07845734276" class="phone">07845 734276</a>
-    <a href="tel:07845734276" class="btn">Call now</a>
+    <div class="contact-btns">
+      <a href="tel:07845734276" class="btn">Call now</a>
+      <a href="https://wa.me/447845734276" class="btn btn-outline">WhatsApp me</a>
+      <a href="sms:07845734276" class="btn btn-outline">Send a text</a>
+    </div>
   </div>
 </section>
 
